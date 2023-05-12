@@ -1,0 +1,18 @@
+name: dockercompose2207153800059213448
+services:
+  test1:
+    build:
+      context: D:\docker preatice\test1\test1
+      dockerfile: test1/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: test1
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+networks:
+  default:
+    name: dockercompose2207153800059213448_default
